@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>strophe</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="" resname="C541A707039C4F4DB014FD8C33807ED9" translate="no">
+            <source>XMPP Log Level</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="C541A707039C4F4DB014FD8C33807ED9">
+        <trans-unit d4:value="-1:L" id="C541A707039C4F4DB014FD8C33807ED9.0">
+            <source>XMPP_LEVEL_NONE</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="C541A707039C4F4DB014FD8C33807ED9.1">
+            <source>XMPP_LEVEL_DEBUG</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="C541A707039C4F4DB014FD8C33807ED9.2">
+            <source>XMPP_LEVEL_INFO</source>
+        </trans-unit>
+        <trans-unit d4:value="0:L" id="C541A707039C4F4DB014FD8C33807ED9.3">
+            <source>XMPP_LEVEL_WARN</source>
+        </trans-unit>
+        <trans-unit d4:value="2:L" id="C541A707039C4F4DB014FD8C33807ED9.4">
+            <source>XMPP_LEVEL_ERROR</source>
+        </trans-unit>
+    </group>
+</xliff>
