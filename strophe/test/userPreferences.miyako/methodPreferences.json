@@ -180,10 +180,10 @@
 		"stamp": "2019-07-07T00:13:49.000Z"
 	},
 	"Sources/Methods/TEST_send.4dm": {
-		"startSelection": 6,
-		"endSelection": 6,
-		"firstSelectedLine": 13,
-		"lastSelectedLine": 13,
+		"startSelection": 8,
+		"endSelection": 13,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2019-11-29T02:03:00.000Z"
@@ -195,6 +195,6 @@
 		"lastSelectedLine": 6,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2019-11-29T01:35:48.725Z"
+		"stamp": "2019-11-29T01:35:48.000Z"
 	}
 }

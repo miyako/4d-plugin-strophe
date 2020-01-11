@@ -150,14 +150,14 @@
 		"height": 662
 	},
 	"Sources/Methods/TEST_send.4dm": {
-		"left": 42,
-		"top": 232,
+		"left": 515,
+		"top": 151,
 		"width": 877,
 		"height": 638
 	},
 	"Sources/Methods/TEST_receive.4dm": {
-		"left": 203,
-		"top": 255,
+		"left": 218,
+		"top": 149,
 		"width": 877,
 		"height": 664
 	}
