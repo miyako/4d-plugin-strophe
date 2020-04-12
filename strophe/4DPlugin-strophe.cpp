@@ -253,14 +253,16 @@ void stanza_type_message_handler(xmpp_conn_t * const conn,
             if(root.isObject())
             {
                 xmpp_stanza_t *message = xmpp_stanza_new(ctx);
-                                
+                char *uuid = xmpp_uuid_gen(ctx);
+
                 xmpp_stanza_set_type(message, "chat");
                 xmpp_stanza_set_name(message, "message");
                 xmpp_stanza_set_ns(message, "jabber:client");
                 xmpp_stanza_set_from(message, xmpp_conn_get_jid(conn));
                 xmpp_stanza_set_attribute(message, "xml:lang", "en");
-                xmpp_stanza_set_id(message, xmpp_uuid_gen(ctx));
-                
+                xmpp_stanza_set_id(message, uuid);
+                xmpp_free(ctx, uuid);
+
                 for(Json::Value::const_iterator it = root.begin() ; it != root.end() ; it++)
                 {
                     if(it->isString())
