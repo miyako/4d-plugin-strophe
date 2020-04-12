@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GN3d0TAJ9b7no7BLULpa7Jyedfs=
+			yVDAzjAzGMENbV859nbicNQ2DJM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GN3d0TAJ9b7no7BLULpa7Jyedfs=
+			yVDAzjAzGMENbV859nbicNQ2DJM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hc6gEGSDxpPAKxDxNWkkX/UdyehqU8cTQL5y/Txls6c=
+			a/Vk1P7k4Yn+HRXm9Me44HPEsom4nf78wpWMZbJaE/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -59,110 +59,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			23BzSLcFO4wXNrlGFLb9S2XqL/I=
+			zQAu1GNcWGVsjIF86le1vyExuO0=
 			</data>
 			<key>hash2</key>
 			<data>
-			E7QOoswOxU0kfq6QQIJ4JOUv9AChkvSNLcpAiMfKlwo=
-			</data>
-		</dict>
-		<key>Windows/strophe.exp</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VzhthUlC4ZxBqQE2GcP2LrimVJ8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ap/Lit0JybZk++w8d1WlIGJNilZkpZ4jl88xB+A6Y1c=
-			</data>
-		</dict>
-		<key>Windows/strophe.iobj</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EqWKcgXmkrb9QQUUu0xrKBwhgJQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			xnX7gahabhhmGB+jt0Jd6fosUV5r1damc5bmxDkqt8s=
-			</data>
-		</dict>
-		<key>Windows/strophe.ipdb</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4KYMwdNjWFUggEo8NkJWyMmVXEk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Lu0SPCDjN14vo+3K/DyQWGiuJxYkvpsr5SpqosLVlfQ=
-			</data>
-		</dict>
-		<key>Windows/strophe.lib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/o0abSqXMYk3KpKs4maLK4UeGIU=
-			</data>
-			<key>hash2</key>
-			<data>
-			v3zymEGE/DdmMuzai2/lOAJ8bN/flUqIbHykiet1oaw=
+			cNfcsTiIGj4bpp4grey0jPWOYG7+2GGzl8jSNGScYfo=
 			</data>
 		</dict>
 		<key>Windows64/strophe.4DX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CnIbpjP/Sbifm9KqLXVdYim3zZU=
+			q9Cu/r/hEn0MnZmfE5jMDraRMCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OBT4pQiGv0IztqdV53Y85tDFiOng9kO6Y/5I5jBcDs0=
-			</data>
-		</dict>
-		<key>Windows64/strophe.exp</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a4FMW5X8vda/oq9fipHfodKz98I=
-			</data>
-			<key>hash2</key>
-			<data>
-			RxAJtPnO5t5WM4V9/82lcPZNGwcMHoS6qn41jz9xjtM=
-			</data>
-		</dict>
-		<key>Windows64/strophe.iobj</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DoBScyPQYWNOXtnU/cvl3YRYlYg=
-			</data>
-			<key>hash2</key>
-			<data>
-			Kn+VmenEQs1sxlcNAsYdmsm77jf/ha/PbcY9sH/szqE=
-			</data>
-		</dict>
-		<key>Windows64/strophe.ipdb</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BkufASsPts/FPI6yPbibKVA2YtU=
-			</data>
-			<key>hash2</key>
-			<data>
-			UWJitsqha+s17OYViYBXUqLKDvmwYX2H/Cc7MGohReA=
-			</data>
-		</dict>
-		<key>Windows64/strophe.lib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vAfvZpSrEaUSUSdGf9dKlokZpkY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Rg7GQv0BX9OQH+iafyLRgsi0swMvF80b1q4JT5n/QPA=
+			lW6BcLFtCp8me9neTqBJKLCXRkE0Hgs0jeCy1ooOPLM=
 			</data>
 		</dict>
 		<key>manifest.json</key>
