@@ -17,15 +17,15 @@
 		<data>
 		lRWPnIYh3AJYUZ8u+pH3IvYt/7A=
 		</data>
+		<key>Resources/manifest.json</key>
+		<data>
+		CaZXGINL3Aw2JtAxRlkwf+XhAmg=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hC+U8EqvyIRM1lLakHLfvl4V9Tc=
-			</data>
 			<key>hash2</key>
 			<data>
 			nGfrvibB5KlzvZgF4Bra+l0HpRloxismgTLePnOwCdk=
@@ -33,10 +33,6 @@
 		</dict>
 		<key>Resources/English.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yVDAzjAzGMENbV859nbicNQ2DJM=
-			</data>
 			<key>hash2</key>
 			<data>
 			a/Vk1P7k4Yn+HRXm9Me44HPEsom4nf78wpWMZbJaE/A=
@@ -46,21 +42,20 @@
 		</dict>
 		<key>Resources/constants.xlf</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lRWPnIYh3AJYUZ8u+pH3IvYt/7A=
-			</data>
 			<key>hash2</key>
 			<data>
 			Q6rnxUaEjloGZLJyiervwkuhpI2rNkkgL1a6ZvIlIPU=
 			</data>
 		</dict>
+		<key>Resources/manifest.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P6XuxpDSKMghmWhOoEvbm64JJa8bki+rbLt0D44vwCg=
+			</data>
+		</dict>
 		<key>Windows/strophe.4DX</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zQAu1GNcWGVsjIF86le1vyExuO0=
-			</data>
 			<key>hash2</key>
 			<data>
 			cNfcsTiIGj4bpp4grey0jPWOYG7+2GGzl8jSNGScYfo=
@@ -68,23 +63,10 @@
 		</dict>
 		<key>Windows64/strophe.4DX</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q9Cu/r/hEn0MnZmfE5jMDraRMCY=
-			</data>
 			<key>hash2</key>
 			<data>
 			lW6BcLFtCp8me9neTqBJKLCXRkE0Hgs0jeCy1ooOPLM=
 			</data>
-		</dict>
-		<key>manifest.json</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			wZYhta2F3+HisgATVmsHTvIJ6nM=
-			</data>
-			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>

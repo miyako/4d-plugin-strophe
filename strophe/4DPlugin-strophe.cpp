@@ -261,7 +261,7 @@ void stanza_type_message_handler(xmpp_conn_t * const conn,
                 xmpp_stanza_set_from(message, xmpp_conn_get_jid(conn));
                 xmpp_stanza_set_attribute(message, "xml:lang", "en");
 
-                char *uuid = xmpp_uuid_gen(ctx);
+                //char *uuid = xmpp_uuid_gen(ctx);
                 xmpp_stanza_set_id(message, uuid);
 
                 for(Json::Value::const_iterator it = root.begin() ; it != root.end() ; it++)
