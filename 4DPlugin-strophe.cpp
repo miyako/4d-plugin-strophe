@@ -39,10 +39,10 @@ void PluginMain(PA_long32 selector, PA_PluginParameters params) {
 			// --- strophe
 
             case 1 :
-                xmpp_send(params, xmpp_stanza_type_message);
+                PluginXmppSend(params, xmpp_stanza_type_message);
                 break;
             case 2 :
-                xmpp_send(params, xmpp_stanza_type_connect);
+                PluginXmppSend(params, xmpp_stanza_type_connect);
                 break;
         }
 
@@ -98,7 +98,8 @@ int version_handler(xmpp_conn_t * const conn,
 
     query = xmpp_stanza_new(ctx);
     xmpp_stanza_set_name(query, "query");
-    ns = xmpp_stanza_get_ns(xmpp_stanza_get_children(stanza));
+    xmpp_stanza_t *first_child = xmpp_stanza_get_children(stanza);
+    ns = first_child ? xmpp_stanza_get_ns(first_child) : NULL;
     if (ns) {
         xmpp_stanza_set_ns(query, ns);
     }
@@ -161,13 +162,13 @@ int message_handler(xmpp_conn_t * const conn, xmpp_stanza_t * const stanza, void
     const char *mid = xmpp_stanza_get_id(stanza);
     const char *ns = xmpp_stanza_get_ns(stanza);
 
-    ob_set_s(o, L"body", text);
-    ob_set_s(o, L"type", type);
-    ob_set_s(o, L"name", name);
-    ob_set_s(o, L"from", from);
-    ob_set_s(o, L"to", to);
-    ob_set_s(o, L"id", mid);
-    ob_set_s(o, L"ns", ns);
+    ob_set_s(o, L"body", text ? text : "");
+    ob_set_s(o, L"type", type ? type : "");
+    ob_set_s(o, L"name", name ? name : "");
+    ob_set_s(o, L"from", from ? from : "");
+    ob_set_s(o, L"to", to ? to : "");
+    ob_set_s(o, L"id", mid ? mid : "");
+    ob_set_s(o, L"ns", ns ? ns : "");
 
     if(text) {
         free(text);
@@ -248,6 +249,8 @@ void stanza_type_message_handler(xmpp_conn_t * const conn,
                                    mem->stanza + strlen(mem->stanza),
                                    &root,
                                    &errors);
+        delete reader;
+
         if(parse)
         {
             if(root.isObject())
@@ -261,7 +264,6 @@ void stanza_type_message_handler(xmpp_conn_t * const conn,
                 xmpp_stanza_set_from(message, xmpp_conn_get_jid(conn));
                 xmpp_stanza_set_attribute(message, "xml:lang", "en");
 
-                //char *uuid = xmpp_uuid_gen(ctx);
                 xmpp_stanza_set_id(message, uuid);
 
                 for(Json::Value::const_iterator it = root.begin() ; it != root.end() ; it++)
@@ -304,7 +306,7 @@ void stanza_type_message_handler(xmpp_conn_t * const conn,
     }
 }
 
-void xmpp_send(PA_PluginParameters params, xmpp_stanza_type_t type) {
+void PluginXmppSend(PA_PluginParameters params, xmpp_stanza_type_t type) {
 
     PA_ObjectRef status = PA_CreateObject();
     PA_ObjectRef options = NULL;
@@ -324,7 +326,7 @@ void xmpp_send(PA_PluginParameters params, xmpp_stanza_type_t type) {
             break;
     }
 
-    CUTF8String json_stanza, json_handers;
+    CUTF8String json_stanza;
 
     if(stanza) {
         ob_stringify(stanza, &json_stanza);
@@ -363,7 +365,7 @@ void xmpp_send(PA_PluginParameters params, xmpp_stanza_type_t type) {
             if((logLevel == -1)
                || (logLevel > XMPP_LEVEL_ERROR)
                || (logLevel < -1)) {
-                logLevel = NULL;
+                logLevel = 0;
             }
             log_level = (xmpp_log_level_t)logLevel;
         }

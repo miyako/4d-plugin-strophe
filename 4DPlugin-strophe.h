@@ -28,6 +28,6 @@ typedef enum {
  xmpp_stanza_type_connect = 1
 }xmpp_stanza_type_t;
 
-void xmpp_send(PA_PluginParameters params, xmpp_stanza_type_t type);
+void PluginXmppSend(PA_PluginParameters params, xmpp_stanza_type_t type);
 
 #endif /* PLUGIN_STROPHE_H */
