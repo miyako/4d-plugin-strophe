@@ -402,9 +402,9 @@ void PluginXmppSend(PA_PluginParameters params, xmpp_stanza_type_t type) {
         }
 
         /* mandatory */
-        ob_get_s(options, L"jid", &jid);
-        ob_get_s(options, L"password", &password);
-        ob_get_s(options, L"host", &host);
+        ob_get_a(options, L"jid", &jid);
+        ob_get_a(options, L"password", &password);
+        ob_get_a(options, L"host", &host);
 
         if(ob_is_defined(options, L"disableTLS"))
         {
