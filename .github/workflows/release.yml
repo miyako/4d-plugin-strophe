@@ -73,9 +73,19 @@ jobs:
       # builds). "10.0" lets MSBuild resolve to whatever full 10.0.xxxxx.x SDK
       # is actually installed on the runner, rather than pinning an exact
       # build number that may not match the image.
+      # Release configuration hardcodes WholeProgramOptimization=true (i.e.
+      # /GL + /LTCG) in the vcxproj, matched to the v140 toolset the vendored
+      # lib\windows64\*.lib files were built with. Since this job compiles the
+      # plugin's own sources with v143 (per the toolset override above) but
+      # links against those unchanged v140-built vendored libs, LTCG's
+      # compiler-version-specific intermediate format triggers LINK C1047
+      # ("different version of the compiler"). Overriding
+      # WholeProgramOptimization off here avoids that mismatch without
+      # touching the vendored binaries; it costs whole-program optimization
+      # on this CI-built Release binary only.
       - name: build x64
         shell: cmd
-        run: msbuild "${{ env.VCX_SOLUTION }}" /p:Configuration=Release /p:Platform=x64 /p:PlatformToolset=v143 /p:WindowsTargetPlatformVersion=10.0 /m
+        run: msbuild "${{ env.VCX_SOLUTION }}" /p:Configuration=Release /p:Platform=x64 /p:PlatformToolset=v143 /p:WindowsTargetPlatformVersion=10.0 /p:WholeProgramOptimization=false /m
 
       - name: upload windows binaries
         uses: actions/upload-artifact@v4
