@@ -1,1 +1,3 @@
 strophe/build/*
+test/userPreferences.*
+test/Project/DerivedData/*
